@@ -12,8 +12,10 @@ class PlacesController < ApplicationController
   end
 
   def new
+    if @current_user
     @place = Place.new
-  end
+    end
+  end 
 
   def create
     if @current_user
