@@ -17,5 +17,6 @@ class PostsController < ApplicationController
     @post.save
     redirect_to "/places/#{@post["place_id"]}"
   end
+end
 
 end
