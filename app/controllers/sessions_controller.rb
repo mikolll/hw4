@@ -11,11 +11,11 @@ class SessionsController < ApplicationController
         flash["notice"] = "Hello, #{@user["first_name"]}."
         redirect_to "/places"
       else
-        flash["notice"] = "Sorry, that is wrong."
+        flash["notice"] = "Sorry, we do not recognize that email or password."
         redirect_to "/login"
       end
     else
-      flash["notice"] = "Sorry, that is wrong."
+      flash["notice"] = "Sorry, we do not recognize that email or password."
       redirect_to "/login"
     end
   end
