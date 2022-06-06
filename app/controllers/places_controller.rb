@@ -26,8 +26,8 @@ class PlacesController < ApplicationController
     redirect_to "/places"
   else
     flash["notice"] = "Please login first."
+
   end
-  redirect_to "/places"
+  end
 end
-  end
 

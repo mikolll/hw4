@@ -8,7 +8,6 @@ class PostsController < ApplicationController
   end
 
   def create
-    if @current_user
     @post = Post.new
     @post["title"] = params["post"]["title"]
     @post["description"] = params["post"]["description"]
