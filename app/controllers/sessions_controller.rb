@@ -1,4 +1,10 @@
 class SessionsController < ApplicationController
+  
+  def index
+    @session = Session.all
+  end
+
+  
   def new
   end
 
