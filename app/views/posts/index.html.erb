@@ -1,0 +1,15 @@
+<h1>My Posts</h1>
+
+
+<ul>
+  <% for post in @posts %>
+    <% if post.uploaded_image.attached? %>
+     <img src="<%= url_for(post.uploaded_image) %>" class="img-fluid">
+    <% else %>
+     <img src="<%= post["image"] %>" class="img-fluid">
+    <% end %>
+ <% end %>
+
+</ul>
+
+     

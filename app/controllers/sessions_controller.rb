@@ -20,9 +20,6 @@ class SessionsController < ApplicationController
         flash["notice"] = "Sorry, we do not recognize that email or password."
         redirect_to "/login"
       end
-    else
-      flash["notice"] = "Sorry, we do not recognize that email or password."
-      redirect_to "/login"
     end
   end
 
