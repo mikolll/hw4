@@ -1,7 +1,7 @@
 <div class="row">
 
 <% if @current_user%>
-<h1><%= @place["name"] %></h1>
+<h1><%= @places["name"] %></h1>
 
 <p>
 <h2>My Posts</h2>
@@ -19,7 +19,7 @@
 
 
 <p>
-  <a href="/posts/new?place_id=<%= @user["id"] %>">New Post</a>
+  <a href="/posts/new?place_id=<%= @places["id"] %>">New Post</a>
 </p>
 
 <p>

@@ -8,8 +8,8 @@ class PlacesController < ApplicationController
 
   def show
     if @current_user
-    @place = Place.find_by({ "id" => params["id"] })
-    @posts = Post.where({ "place_id" => @place["id"] })
+    @places = Place.find_by({ "id" => params["id"] })
+    @posts = Post.where({ "place_id" => @places["id"] })
     end
   end
 
