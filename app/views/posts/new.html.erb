@@ -2,16 +2,28 @@
 
 <%= form_with :model => @post do |form| %>
   <p>
+     <div class="mb-3">
     <%= form.label "title" %>
     <%= form.text_field "title" %>
+    </div>
   </p>
   <p>
+     <div class="mb-3">
     <%= form.label "description" %>
     <%= form.text_field "description" %>
+    </div>
   </p>
   <p>
+     <div class="mb-3">
     <%= form.label "posted_on" %>
     <%= form.date_field "posted_on" %>
+    </div>
+  </p>
+<p>
+   <div class="mb-3">
+      <%= form.label "uploaded_image", :class => "form-label" %>
+      <%= form.file_field "uploaded_image", :accept => "image/png,image/jpg,image/jpeg,image/gif", :class => "form-control" %>
+   </div>
   </p>
   <p>
     <%= form.submit %>

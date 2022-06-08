@@ -16,3 +16,4 @@ class UsersController < ApplicationController
     redirect_to "/places/#{@user["id"]}"
   end
 end
+#/#{@user["id"]}
